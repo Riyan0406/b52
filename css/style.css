@@ -1,172 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.navigation{
-    display: flex;
-    justify-content:space-between;
+.navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav{
-    width: 100%;
-    background-color:#DBCC95;
-    align-items: center;
+nav {
+  width: 100%;
+  background-color: #dbcc95;
+  align-items: center;
 }
 
-.nav-left, .nav-right {
-    display: flex;
-    align-items: center;
-
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
-.nav-left a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    margin-left: 15px;
-
-
+.nav-left a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-left: 15px;
 }
 
-.nav-left img{
-    width: 60px;
-    margin-left: 20px;
-
-
+.nav-left img {
+  width: 60px;
+  margin-left: 20px;
 }
 
-.nav-right{
-    margin-right: 40px;
-    
+.nav-right {
+  margin-right: 40px;
 }
 
-.nav-right a{
-    color: black;
-    border-radius: 5px;
-    padding: 5px 15px;
-    text-decoration: none;
-    background-color: white;
-    font-weight:bold;
+.nav-right a {
+  color: black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: white;
+  font-weight: bold;
+}
+.contener-content {
+  background: #eaeccc;
+  height: 84vh;
+  padding-top: 40px;
 }
 
-
-
-.contener-content{
-    background: #EAECCC;
-    height: 84vh;
-    padding-top: 40px;
+.content p {
+  text-align: justify;
+  margin-top: 10px;
 }
 
-.content p{
-text-align: justify;
-margin-top: 10px;
+.content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  display: flex;
 }
 
-
-
-.content{
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border-top: 2px solid #ffffff75;
-    border-left: 2px solid #ffffff75;
-    box-shadow: 5px 5px 12px #00000035;
-    background: #ffffff25;
-    border-radius: 15px;
-    overflow: hidden;
-    backdrop-filter: blur(4px); 
-    display: flex;
-
-   
+.content-left {
+  flex: 50%;
 }
 
-
-.content-left{
-    flex: 50%;
-
+.content-right {
+  flex: 50%;
+  padding: 10px;
 }
 
-.content-right{
-    flex: 50%;
-   padding: 10px;
+.contact a {
+  color: black;
+  padding: 3px 15px;
+  border-radius: 8px;
+  background-color: white;
+  text-decoration: none;
 }
 
-.contact a{
-    color: black;
-    padding: 3px 15px;
-    border-radius: 8px;
-    background-color: white;
-    text-decoration: none;
+.contact a:hover {
+  background-color: black;
+  color: white;
 }
 
-.contact a:hover{
-    background-color: black;
-    color:white
+.contact {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.contact{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.cv a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.cv a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+.cv {
+  margin-bottom: 15px;
 }
 
-.cv{
-    margin-bottom: 15px;
-}
-
-.cv a:hover{
-    border-bottom: 1px solid black;
+.cv a:hover {
+  border-bottom: 1px solid black;
 }
 
 .icon {
-    width: 100%;
-   
+  width: 100%;
 }
-.icon i{
-    margin: 0 auto;
-    width: 50px;
-    font-size: 30px;
-    color: black;
-    margin-bottom: 10px;
+.icon i {
+  margin: 0 auto;
+  width: 50px;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
 }
 
-.icon i:hover{
-     -webkit-transform: scale(1.08);
-    transform: scale(1.08);
-    color: black;
-    font-weight: bold;
+.icon i:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: black;
+  font-weight: bold;
 }
 
 .image img {
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
 }
 
 .image {
-    width: 100%;
-    border-top: 2px solid #ffffff75;
-    border-left: 2px solid #ffffff75;
-    box-shadow: 5px 5px 12px #00000035;
-    background: #ffffff25;
-    border-radius: 15px;
-    overflow: hidden;
-    backdrop-filter: blur(4px);
-    padding: 10px;
+  width: 100%;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  padding: 10px;
 }
 
-.footer{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+.footer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.footer h2{
-    font-size: 15px;
+.footer h2 {
+  font-size: 15px;
 }
