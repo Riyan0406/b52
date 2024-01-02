@@ -9,7 +9,7 @@ function submitData() {
     return alert("Tolong isi dulu nama nya");
   } else if (number === "") {
     return alert("Tolong isi dulu number nya");
-  } else if (email === "") {
+  } else if (email === "") {[]
     return alert("Tolong isi dulu email nya");
   } else if (subject === "") {
     return alert("Tolong isi dulu subject nya");
