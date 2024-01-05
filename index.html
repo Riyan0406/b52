@@ -21,14 +21,30 @@
             src="/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
             alt=""
           />
-          <a href="index.html">Home</a>
-          <a href="/project.html">My Project</a>
+          <div class="link">
+            <a href="index.html" class="aktive-link">Home</a>
+            <a href="/project.html">My Project</a>
+          </div>
         </div>
         <div class="nav-right">
           <a href="Contact.html">Contact Me</a>
+          <div class="burger">
+            <button onclick="openHamburger()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="items-hamburger" id="items-bars">
+      <a href="/index.html">Home</a>
+     
+      <a href="/project.html">My Project</a>
+     
+      <a href="/Contact.html">Contact Me</a>
+    </div>
+
+    <!--content-->
 
     <div class="contener-content">
       <div class="content">
@@ -76,4 +92,10 @@
       </div>
     </div>
   </body>
+  <script src="/src/assets/js/nav.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/js/burger.js"></script>
 </html>

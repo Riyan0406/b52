@@ -58,7 +58,7 @@ nav {
 .content {
   width: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   border-top: 2px solid #ffffff75;
   border-left: 2px solid #ffffff75;
   box-shadow: 5px 5px 12px #00000035;
@@ -75,7 +75,7 @@ nav {
 
 .content-right {
   flex: 50%;
-  padding: 10px;
+  padding: 0px;
 }
 
 .contact a {
@@ -143,7 +143,7 @@ nav {
   border-radius: 15px;
   overflow: hidden;
   backdrop-filter: blur(4px);
-  padding: 10px;
+  padding: 0px;
 }
 
 .footer {
@@ -154,4 +154,90 @@ nav {
 
 .footer h2 {
   font-size: 15px;
+}
+
+/* humburger */
+
+.items-hamburger {
+  display: flex;
+  flex-direction: column;
+}
+
+#items-bars {
+  display: none;
+}
+
+.burger i {
+  display: none;
+}
+
+
+.items-hamburger a{
+  text-align: center;
+  display: flex;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.content-right{
+  /* border: 1px solid black; */
+}
+
+
+/* responsif */
+
+@media only screen and (max-width: 834px) {
+  .nav-left a {
+    display: none;
+  }
+  .nav-right a {
+    display: none;
+  }
+
+  .burger i {
+    display: block;
+  }
+
+  .items-hamburger a:hover {
+    transform: scale(1.2);
+  }
+
+  .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  
+
+  }
+
+  .image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  padding: 0px; 
+  
+}
+
+.contener-content{
+  padding-top: 0;
+}
+
+
+
 }

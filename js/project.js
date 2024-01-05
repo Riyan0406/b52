@@ -5,6 +5,7 @@ function addData(event) {
   let title = document.getElementById("title").value;
   let description = document.getElementById("Description").value;
   let image = document.getElementById("input-image").files;
+  
   let startDate = document.getElementById("start-date").value;
   let endDate = document.getElementById("end-date").value;
 

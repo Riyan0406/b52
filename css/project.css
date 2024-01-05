@@ -1,92 +1,71 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-form {
-  /* width: 100%; */
-  padding: 1rem;
-  margin: 0 auto;
-  background-color: #b2c8ba;
-  box-shadow: 0px 5px 5px rgba(178, 200, 186, 0.5);
-
-  height: 80vh;
-}
-.judul-form {
+.container-project {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin: 0px auto;
+  background-color: #eaeccc;
 }
-.pembungkus-project {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px 9px;
-  /* border: 1px solid black; */
-}
-.date {
-  width: 100%;
+.form-project {
   display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 350px;
+  gap: 10px;
   justify-content: space-between;
-  gap: 1rem;
-  margin: 10px 0;
 }
-.start-date {
-  flex: 50%;
-  /* border: 1px solid black; */
+.form-project h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 550;
 }
-.end-date {
-  flex: 50%;
-  /* border: 1px solid black; */
+.label-project {
+  font-weight: bold;
+  font-size: 15px;
 }
-.date input {
-  width: 100%;
-  padding: 5px;
-  box-sizing: content-box;
-  background-color: rgba(255, 255, 255, 0.616);
-  border: none;
+.input-project {
+  padding: 15px;
   border-radius: 5px;
-}
-.input-1 input,
-textarea {
-  width: 100%;
-  padding: 5px;
-  box-sizing: content-box;
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: #ffffff;
   border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.container-date {
+  display: flex;
+  gap: 20px;
+}
+.container-startdate {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.container-enddate {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.textarea {
+  height: 100px;
   border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 15px;
 }
-.input-1 div,
-textarea {
-  margin: 10px 0;
-}
-.pembungkus-tekno {
-  margin-top: 10px;
-}
-.golang {
-  margin-left: 10px;
-}
-.java {
-  margin-left: 14px;
-}
-.pembungkus-tekno label,
-input {
-  margin-top: 5px;
-}
-.pembungkus-tekno input {
-  background-color: rgba(255, 255, 255, 0.616);
+.label-upload {
+  font-weight: bold;
+  font-size: 15px;
 }
 .upload {
   margin-top: 10px;
 }
 .input-image-group {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  padding: 5px 5px;
-  background-color: rgba(255, 255, 255, 0.616);
-  border: 1px solid #c4c4c4;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .input-image-group label h6 {
   font-weight: 200;
@@ -102,27 +81,101 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-.klik button {
-  background-color: black;
-  color: white;
-  padding: 5px 15px;
+.submit-project {
+  background-color: #111727;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
   border: none;
-  border-radius: 5px;
-  float: right;
 }
-.klik button:hover {
-  background-color: brown;
+
+.kotak {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.hr- {
+
+/* Card */
+.myproject {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 550;
+}
+.blog-list {
+  margin-top: 30px;
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
-  background-color: #ebf3e8;
+  flex-wrap: wrap;
+}
+.container-card {
+  width: 350px;
+  background-color: #f5f7f8;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.img-card {
+  width: 100%;
+  border-radius: 10px;
+}
+.text-card {
+  padding: 0 20px;
+}
+.text-card a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 550;
+}
+.text-card h4 {
+  font-size: x-small;
+  font-weight: 400;
+}
+.text-card p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: justify;
+}
+.checkbox {
+  margin-top: 20px;
+}
+#icon {
   display: flex;
-  justify-content: center;
+  gap: 10px;
+}
+#icon img {
+  width: 20px;
+}
+.btn-group {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.btn-card {
+  padding: 10px;
+  width: 170px;
+  background-color: #111727;
+  color: #fff;
+  font-size: large;
+  border-radius: 15px;
+  height: 40px;
+  cursor: pointer;
 }
 .hr- h2 {
-  margin-top: 15px;
-  margin-bottom: 10px;
+ 
+ display: flex;
+ justify-content: center;
+ background-color: #ebf3e8;
+ padding-top: 80px;
+  
+}
+
+.hr- {
+  
 }
 .kelas1 {
   /* width: 100%; */
@@ -147,11 +200,13 @@ input {
   color: black;
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 .lorem {
   display: flex;
   text-align: justify;
   font-size: 15px;
+
 }
 .kelas3 img {
   width: 100%;
@@ -162,9 +217,11 @@ input {
   font-size: 10px;
   padding: 0;
   margin-bottom: 7px;
+  margin-top: 5px;
 }
 .icon {
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 .icon i {
   width: 30px;
@@ -196,4 +253,15 @@ input {
   background-color: black;
   color: white;
   padding: 3px 42%;
+}
+
+@media only screen and (max-width: 834px){
+  .kelas2{
+    width: 90%;
+  }
+
+  .kelas1{
+
+  }
+
 }

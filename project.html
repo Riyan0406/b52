@@ -27,99 +27,72 @@
         </div>
         <div class="nav-right">
           <a href="Contact.html">Contact Me</a>
+          <div class="burger">
+            <button onclick="openHamburger()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="items-hamburger" id="items-bars">
+      <a href="/index.html">Home</a>
+     
+      <a href="/project.html">My Project</a>
+     
+      <a href="/Contact.html">Contact Me</a>
+    </div>
 
-    <form class="" onsubmit="addData(event)">
-      <div class="judul-form"><h4>ADD MY PROJECT</h4></div>
-      <div class="pembungkus-project">
-        <div class="input-1">
-          <label for="title" class="form-label">Project Name</label>
-          <input type="text" class="form-control" name="title" id="title" />
-        </div>
-        <div class="date">
-          <div class="start-date">
-            <label for="start-date" class="form-label">Start Date</label>
-            <input
-              type="date"
-              class="form-control"
-              name="start-date"
-              id="start-date"
-            />
-          </div>
-          <div class="end-date">
-            <label for="end-date" class="form-label">End Date</label>
-            <input
-              type="date"
-              class="form-control"
-              name="end-date"
-              id="end-date"
-            />
-          </div>
-        </div>
-        <div class="input-1">
-          <label for="Description" class="form-label">Description</label>
-          <textarea
-            class=""
-            name="Description"
-            id="Description"
-            style="resize: none; height: 100px"
-          ></textarea>
-        </div>
-        <div class="pembungkus-tekno">
-          <label>Technologies</label>
-          <div>
-            <input
-              type="checkbox"
-              name="Technologies"
-              value="node-js"
-              id="node"
-            />
-            <label class="" for="node">Node Js</label>
-            <input
-              class="java"
-              type="checkbox"
-              name="Technologies"
-              value="java"
-              id="java"
-            />
-            <label class="" for="java">Java</label>
-          </div>
-          <div>
-            <input
-              class=""
-              type="checkbox"
-              name="Technologies"
-              value="react-js"
-              id="react"
-            />
-            <label class="" for="react">React Js</label>
-            <input
-              class="golang"
-              type="checkbox"
-              name="Technologies"
-              value="golang"
-              id="golang"
-            />
-            <label class="" for="golang">Golang</label>
-          </div>
-        </div>
-        <div class="upload">
-          <label for="input-image">Upload Image</label>
-          <div class="input-image-group">
-            <label for="input-image">
-              <h6>Choose</h6>
-              <img src="/image/link.jpg" alt="" />
-            </label>
-            <input type="file" id="input-image" hidden />
-          </div>
-        </div>
-        <div class="klik">
-          <button type="submit">Post Project</button>
-        </div>
-      </div>
-    </form>
+   <div class="container-project">
+        <form class="form-project">
+            <h1>ADD MY PROJECT</h1>
+            <label for="inputProject" class="label-project">Project Name</label>
+            <input type="text" id="title" class="input-project" required>
+            <div class="container-date">
+                <div class="container-startdate">
+                    <label for="startDate" class="label-project">Start Date</label>
+                    <input type="date" id="start-date" class="input-project" required>
+                </div>
+                <div class="container-enddate">
+                    <label for="endDate" class="label-project">End Date</label>
+                    <input type="date" id="end-date" class="input-project" required>
+                </div>
+            </div>
+            <label for="desc" class="label-project">Description</label>
+            <textarea id="Description" class="textarea" required></textarea>
+            <label for="checkbox" class="label-project">Technologies</label>
+            <label>
+                <div style="padding-bottom: 10px;">
+                <label>
+                    <input type="checkbox" id="node" name="checkbox"> Node Js
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" style="margin-left: 10px;" id="java"> Java
+                </label>
+               </div>
+               <div>
+                <label>
+                    <input type="checkbox" id="golang" name="checkbox"> Golang
+                </label>
+                <label>
+                    <input type="checkbox" style="margin-left: 10px;" id="react" name="checkbox"> React
+                </label>
+               </div>
+            <div class="upload">
+                <label class="label-upload">Upload Image</label>
+                <div class="input-image-group">
+                  <label for="input-image">
+                    <h6>Choose</h6>
+                    <img src="/image/link.jpg" style="width: 20px;"/>
+                  </label>
+                  <input type="file" id="input-image"hidden multiple required />
+                </div>
+              </div>
+              <div style="display: flex; justify-content: flex-end; margin-top: 20px; padding-bottom: 20px;">
+                <input type="button" value="submit" class="submit-project" onclick="addData(event)">
+            </div>
+        </form>
+    </div>
 
     <div class="hr-">
       <h2>MY PROJECT</h2>
@@ -158,6 +131,7 @@
       </div>
     </div>
     <script src="/js/project.js"></script>
+    <script src="/js/burger.js"></script>
     
 </body>
 </html>
