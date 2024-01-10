@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Project</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/detail.css" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,16 +19,33 @@
       <div class="navigation">
         <div class="nav-left">
           <img
-            src="/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png" alt=""/>
-          <a href="index.html">Home</a>
-          <a href="/project.html">My Project</a>
-          <a href="/testimonial.html">My testimonial</a>
+            src="/src/assets/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
+            alt=""
+          />
+          <div class="link">
+            <a href="/views/index.html" class="active-link">Home</a>
+            <a href="/views/project.html">My Project</a>
+            <a href="/views/testimonial.html">My testimonial</a>
+          </div>
         </div>
         <div class="nav-right">
-          <a href="Contact.html">Contact Me</a>
+          <a href="/views/Contact.html">Contact Me</a>
+           <div class="burger">
+            <button onclick="openHamburger()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="items-hamburger" id="items-bars">
+      <a href="/views/index.html">Home</a>
+     
+      <a href="/views/project.html">My Project</a>
+      <a href="/views/testimonial.html">My testimonial</a>
+     
+      <a href="/views/Contact.html">Contact Me</a>
+    </div>
 
     <div class="judul-detail">
       <h2>Detail Project</h2>
@@ -36,7 +53,7 @@
     <div class="detail">
       <div class="detail-left">
         <img
-          src="/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg"alt=""srcset=""/>
+          src="/src/assets/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg"alt=""srcset=""/>
           
       </div>
       <div class="detail-right">

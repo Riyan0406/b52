@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add project</title>
-    <link rel="stylesheet" href="/css/project.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/src/assets/css/project.css">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,16 +19,18 @@
       <div class="navigation">
         <div class="nav-left">
           <img
-            src="/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
+            src="/src/assets/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
             alt=""
           />
-          <a href="index.html">Home</a>
-          <a href="">My Project</a>
-          <a href="/testimonial.html">My testimonial</a>
+          <div class="link">
+            <a href="/views/index.html" class="active-link">Home</a>
+            <a href="/views/project.html">My Project</a>
+            <a href="/views/testimonial.html">My testimonial</a>
+          </div>
         </div>
         <div class="nav-right">
-          <a href="Contact.html">Contact Me</a>
-          <div class="burger">
+          <a href="/views/Contact.html">Contact Me</a>
+           <div class="burger">
             <button onclick="openHamburger()">
               <i class="fa-solid fa-bars"></i>
             </button>
@@ -37,12 +39,12 @@
       </div>
     </nav>
     <div class="items-hamburger" id="items-bars">
-      <a href="/index.html">Home</a>
+      <a href="/views/index.html">Home</a>
      
-      <a href="/project.html">My Project</a>
-      <a href="/testimonial.html">My testimonial</a>
+      <a href="/views/project.html">My Project</a>
+      <a href="/views/testimonial.html">My testimonial</a>
      
-      <a href="/Contact.html">Contact Me</a>
+      <a href="/views/Contact.html">Contact Me</a>
     </div>
 
    <div class="container-project">
@@ -85,7 +87,7 @@
                 <div class="input-image-group">
                   <label for="input-image">
                     <h6>Choose</h6>
-                    <img src="/image/link.jpg" style="width: 20px;"/>
+                    <img src="/src/assets/image/link.jpg" style="width: 20px;"/>
                   </label>
                   <input type="file" id="input-image"hidden multiple required />
                 </div>
@@ -102,10 +104,10 @@
     <div id="contents" class="kelas1">
       <div class="kelas2">
         <div class="kelas3">
-          <img src="/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg" alt="" />
+          <img src="/src/assets/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg" alt="" />
         </div>
         <div class="elemen">
-          <a href="/detail.html">Teknologi Terbaru 2023</a>
+          <a href="/views/detail.html">Teknologi Terbaru 2023</a>
           <div class="kelas4">
             <p>5 September 2023 12:30 WIB | riyan Maulana</p>
           </div>
@@ -132,8 +134,8 @@
         </div>
       </div>
     </div>
-    <script src="/js/project.js"></script>
-    <script src="/js/burger.js"></script>
+    <script src="/src/assets/js/project.js"></script>
+    <script src="/src/assets/js/burger.js"></script>
     
 </body>
 </html>

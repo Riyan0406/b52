@@ -11,25 +11,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
   </head>
   <body>
-    <nav>
+   <nav>
       <div class="navigation">
         <div class="nav-left">
           <img
-            src="/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
+            src="/src/assets/image/411a4835d38ff899e55ce2802b08329c-removebg-preview.png"
             alt=""
           />
           <div class="link">
-            <a href="index.html" class="aktive-link">Home</a>
-            <a href="/project.html">My Project</a>
-            <a href="/testimonial.html">My testimonial</a>
+            <a href="/views/index.html" class="active-link">Home</a>
+            <a href="/views/project.html">My Project</a>
+            <a href="/views/testimonial.html">My testimonial</a>
           </div>
         </div>
         <div class="nav-right">
-          <a href="Contact.html">Contact Me</a>
-          <div class="burger">
+          <a href="/views/Contact.html">Contact Me</a>
+           <div class="burger">
             <button onclick="openHamburger()">
               <i class="fa-solid fa-bars"></i>
             </button>
@@ -38,14 +38,13 @@
       </div>
     </nav>
     <div class="items-hamburger" id="items-bars">
-      <a href="/index.html">Home</a>
+      <a href="/views/index.html">Home</a>
      
-      <a href="/project.html">My Project</a>
-      <a href="/testimonial.html">My testimonial</a>
+      <a href="/views/project.html">My Project</a>
+      <a href="/views/testimonial.html">My testimonial</a>
      
-      <a href="/Contact.html">Contact Me</a>
+      <a href="/views/Contact.html">Contact Me</a>
     </div>
-
     <!--content-->
 
     <div class="contener-content">
@@ -84,7 +83,7 @@
         </div>
         <div class="content-right">
           <div class="image">
-            <img src="/image/riyan.jpg" alt="prifile" />
+            <img src="/src/assets/image/riyan.jpg" alt="prifile" />
             <div class="footer">
               <h2>Riyan Maulana</h2>
               <h5>fullstack Developer</h5>
@@ -94,10 +93,6 @@
       </div>
     </div>
   </body>
-  <script src="/src/assets/js/nav.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="/js/burger.js"></script>
+  <script src="/src/assets/js/burger.js"></script>
+  
 </html>
