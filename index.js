@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 5000;
+const port = 3001;
 
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
@@ -28,7 +28,7 @@ app.get("/add-project", (req, res) => {
   res.render("project");
 });
 app.post("/add-project", (req, res) => {
-  const { title, startDate, endDate, Description, Tecnhologies } = req.body;
+  const { title, startDate, endDate, Description, Technologies } = req.body;
 
   console.log(req.body);
   res.redirect("/");

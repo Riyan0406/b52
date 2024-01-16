@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>add project</title>
-   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,20 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-secondary ">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
             class=""
-            src="/src/assets/image/slack_3800024-removebg-preview.png"
+            src="/image/slack_3800024-removebg-preview.png"
             alt=""
             style="width: 50px"
           />
@@ -44,28 +43,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light fw-bold" aria-current="page" href="/">Home</a>
+              <a
+                class="nav-link active text-light fw-bold"
+                aria-current="page"
+                href="/"
+              >Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="/add-project">Add Project</a>
+              <a class="nav-link text-light fw-bold" href="/add-project">Add
+                Project</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="/testimonial"
-                >My Testimonial</a
-              >
+              <a class="nav-link text-light fw-bold" href="/testimonial">My
+                Testimonial</a>
             </li>
           </ul>
         </div>
-        <a href="/Contact"><button type="button" class="btn btn-secondary">Contact Me</button></a>
-        
+        <a href="/Contact"><button
+            type="button"
+            class="btn btn-secondary"
+          >Contact Me</button></a>
+
       </div>
     </nav>
 
-   <form onsubmit="addData(event)"
+    <form
+      method="post"
+      action="/add-project"
       style=" background-color: #9DBC98 ;;"
       class="p-1 mx-auto mb-0"
-      
     >
       <h3 class="text-light d-flex justify-content-center mt-3">Add My Project</h3>
       <div style="width: 50%;" class="vanila mx-auto">
@@ -116,7 +123,7 @@
             <input
               class="bg-body-secondary"
               type="checkbox"
-              name="Technologies"
+              name="Technologies[]"
               value="Node js"
               id="node"
             />
@@ -124,7 +131,7 @@
             <input
               class="ms-3 bg-body-secondary"
               type="checkbox"
-              name="Technologies"
+              name="Technologies[]"
               value="Golang"
               id="golang"
             />
@@ -134,7 +141,7 @@
             <input
               class="bg-body-secondary"
               type="checkbox"
-              name="Technologies"
+              name="Technologies[]"
               value="React js"
               id="react"
             />
@@ -142,7 +149,7 @@
             <input
               class="ms-3 bg-body-secondary"
               type="checkbox"
-              name="Technologies"
+              name="Technologies[]"
               value="Java"
               id="java"
             />
@@ -179,7 +186,7 @@
         <div class="kelas3">
           <img
             style="width: 100%; height: 190px; border-radius: 7px;"
-            src="/src/assets/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg"
+            src="/image/5ea9ef03-320b-4662-81f7-2833a34a6354.jpg"
             alt=""
           />
         </div>
@@ -223,12 +230,12 @@
         </div>
       </div>
     </div>
-    <script src="/src/assets/js/project.js"></script>
-   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
-    
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
 </html>
