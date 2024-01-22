@@ -7,10 +7,13 @@ const hbs = require("hbs");
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
 
+const config = require ("./src/config/config.json")
+const {Sequelize,QueryTypes} = require ("sequelize")
+const sequelize = new Sequelize (config.development)
+
 // set stastic file server
 app.use(express.static("src/assets"));
 
-ggg
 
 // parsing data form client
 
@@ -21,8 +24,13 @@ hbs.registerHelper("arrayIncludes", function (array, value) {
 const dataDummy = [];
 
 // routing
-app.get("/", (req, res) => {
-  res.render("index", { dataDummy });
+app.get("/", async (req, res) => {
+  const queri = `SELECT title, start_date, end_date, description, technologies, image, author, "createdAt", "updatedAt" FROM public.projects
+  ` 
+  const data = await sequelize.query (queri, {type:QueryTypes.SELECT})
+  console.log("ini home",data);
+  
+  res.render("index", { dataDummy:data });
 });
 app.get("/testimonial", (req, res) => {
   res.render("testimonial");
