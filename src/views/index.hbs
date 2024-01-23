@@ -208,10 +208,10 @@
           <div class="">
             <a
               class="nav-link text-dark fw-bold fs-5 "
-              href="/detail-project/{{@index}}"
+              href="/detail-project/{{this.id}}"
             >{{this.title}}</a>
             <div class="text-dark" style="font-size: 10px; font-weight: 200;">
-              <p>{{this.createdAt}} ||{{this.author}}</p>
+              <p>{{this.createdAt}} |{{this.durasiProject}}|{{this.author}}</p>
             </div>
 
             <p class="text-dark" style="text-align: justify;">
@@ -233,14 +233,14 @@
                 class="d-flex justify-content-center border-0 fw-bold"
                 style=" padding: 3px 35px; background-color: #f9bc60;"
               >
-                <a class="nav-link" href="/delete/{{@index}}"> Delete</a>
+                <a class="nav-link" href="/delete/{{this.id}}"> Delete</a>
               </button>
             </div>
             <div class="w-50">
               <button
                 class="d-flex justify-content-center border-0 fw-bold"
                 style=" padding: 3px 46px; margin-left: 2px; background-color: #f9bc60;"
-              > <a class="nav-link " href="/edit/{{@index}}">Edit</a></button>
+              > <a class="nav-link " href="/edit/{{this.id}}">Edit</a></button>
             </div>
           </div>
         </div>

@@ -70,12 +70,12 @@
 
     <form
       method="post"
-      action="/update"
+      action="/update/{{dataDummy.id}}"
       style=" background-color: #9DBC98 ;;"
       class="p-1 mx-auto mb-0"
     >
       <h3 class="text-light d-flex justify-content-center mt-3">Edit My Project</h3>
-      <input type="hidden" name="id" value="{{dataDummy.id}}"/>
+      
       <div style="width: 50%;" class="vanila mx-auto">
         <div class="mb-3">
           <label for="title" class="text-light">Title</label>
@@ -95,7 +95,7 @@
               class="form-control bg-body-secondary"
               name="startDate"
               id="start-date"
-              value="{{dataDummy.startDate}}"
+              value="{{dataDummy.start_date}}"
             />
           </div>
           <div class="w-50 p-1">
@@ -105,7 +105,7 @@
               class="form-control bg-body-secondary"
               name="endDate"
               id="end-date"
-              value="{{dataDummy.endDate}}"
+              value="{{dataDummy.end_date}}"
             />
           </div>
         </div>
@@ -120,7 +120,7 @@
             id="Description"
             style="resize: none; height: 100px"
             
-          >{{dataDummy.Description}}</textarea>
+          >{{dataDummy.description}}</textarea>
         </div>
         <div class="">
           <label class="text-light" for="Technologies ">Tecnhologies</label>
@@ -131,7 +131,7 @@
               name="Tecnhologies"
               value="node-js"
               id="node"
-              {{#if (arrayIncludes dataDummy.Tecnhologies 'node-js')}}checked{{/if}}
+              {{#if (arrayIncludes dataDummy.technologies 'node-js')}}checked{{/if}}
               
             />
             <label class="text-light" for="node">Node Js</label>
@@ -141,7 +141,7 @@
               name="Tecnhologies"
               value="golang"
               id="golang"
-              {{#if (arrayIncludes dataDummy.Tecnhologies 'golang')}}checked{{/if}}
+              {{#if (arrayIncludes dataDummy.technologies 'golang')}}checked{{/if}}
             />
             <label class="text-light" for="golang">Golang</label>
           </div>
@@ -152,16 +152,16 @@
               name="Tecnhologies"
               value="react"
               id="react"
-              {{#if (arrayIncludes dataDummy.Tecnhologies 'react')}}checked{{/if}}
+              {{#if (arrayIncludes dataDummy.technologies 'react')}}checked{{/if}}
             />
             <label class="text-light" for="react">React Js</label>
             <input
               class="ms-3 bg-body-secondary"
               type="checkbox"
               name="Tecnhologies"
-              value="Java"
+              value="java"
               id="java"
-              {{#if (arrayIncludes dataDummy.Tecnhologies 'java')}}checked{{/if}}
+              {{#if (arrayIncludes dataDummy.technologies 'java')}}checked{{/if}}
             />
             <label class="text-light" for="java">Java</label>
           </div>
